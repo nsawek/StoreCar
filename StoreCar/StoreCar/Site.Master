@@ -8,14 +8,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Sklep z autami</title>
-
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
 </head>
 <body>
     <form runat="server">
@@ -51,7 +49,6 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Strona główna</a></li>
                         <li><a runat="server" href="~/About">Informacje</a></li>
                         <li><a runat="server" href="~/Contact">Kontakt</a></li>
                         <li><a runat="server" href="~/ProductList">Produkty</a></li>
@@ -77,25 +74,36 @@
                 </div>
             </div>
         </div>
-            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div>
+                <div class="col-md-2"><div class="thumbnail">
             <asp:ListView ID="categoryList"  
                 ItemType="StoreCar.Models.Category" 
                 runat="server"
                 SelectMethod="GetCategories" >
-                <ItemTemplate><div class="btn-group" role="group">
-                        <a class="btn btn-default" href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                <ItemTemplate>
+                    <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a  class="nav-link" href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
                         <%#: Item.CategoryName %>
-                        </a></div>
+                        </a> </li>
+                     </ul>
                 </ItemTemplate>
-            </asp:ListView></div>
+            </asp:ListView></div></div>
+                <div class="col-md-9"><div class="thumbnail">
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-             <footer>
+            </div></div>
+
+  </div></div>
+
+            <div class="col-md-12">
+         <div class="panel-footer">
                 <p>&copy; <%: DateTime.Now.Year %> - Store Car</p>
-            </footer>
+          </div>
+
        </div>
-    </form>
+  </form>
 </body>
 </html>
