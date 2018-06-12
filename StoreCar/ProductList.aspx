@@ -4,7 +4,7 @@
     <section>
         <div>
            <AnonymousTemplate>
-            <div class="jumbotron">
+         <div class="jumbotron">
         <h1>Witaj w Store Car!</h1>
         <p>Najlepsze doświadczenia zakupowe, tylko u nas.</p>
         <p><a class="btn btn-primary btn-lg" href="/Account/Register" role="button">Dołącz już dziś!</a></p></div></AnonymousTemplate>
@@ -27,27 +27,24 @@
                     </tr>
                 </GroupTemplate>
                 <ItemTemplate>
-                    <div class="col-sm-6 col-md-4">  <div class="thumbnail">
-                    <div runat="server">
-                    
-                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                        <img class="thumbnail" src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"
-                                             /></a>
-                             <div class="caption">
-                                 <span>
-                                        <b>Cena: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
-                                    </span>
-                                   <p>
-                                    <a class="btn btn-default" role="button" href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                        <%#:Item.ProductName%>
-                                    </a>
-                                    <a class="btn btn-primary" href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
-                                        <span class="ProductListItem">
-                                               <i class="fas fa-cart-plus"></i> <b>Dodaj do koszyka<b>
-                                        </span>          
-                                    </a></p>
-                          
-                    </div></div></div></div>
+                    <div class="col-sm-6 col-md-4">  
+                    <div class="card" style="width: 25rem;">
+                    <div runat="server">  
+                                  <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                  <img class="card-img-top" alt="Responsive image" src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"/></a>
+                                  <div class="card-body">
+                                  <h5 class="card-title">
+                                  <b>Cena: </b><%#:String.Format("{0:c}", Item.UnitPrice)%></h5>
+                                  <p class="card-text">
+                                  <a class="card-link" role="button" href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                  <%#:Item.ProductName%>
+                                  </a>
+                                  <a class="btn btn-primary" href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
+                                  <span class="ProductListItem">
+                                  <i class="fas fa-cart-plus"></i><b>Dodaj do koszyka<b>
+                                  </span>          
+                                  </a></p>
+                    </div></div></div></div><br />
                 </ItemTemplate>
                 <LayoutTemplate>
                     <table runat="server" style="width:100%;">

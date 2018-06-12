@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Zarejestruj" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="StoreCar.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -41,5 +43,5 @@
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Zarejestruj" CssClass="btn btn-default" />
             </div>
         </div>
-    </div>
+    </div></div></div>
 </asp:Content>

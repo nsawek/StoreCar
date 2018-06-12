@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="StoreCar.ShoppingCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron jumbotron-fluid"><div class="container">
     <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h1>Twój koszyk</h1></div>
     <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="Vertical" CellPadding="4"
         ItemType="StoreCar.Models.CartItem" SelectMethod="GetShoppingCartItems"  
-        CssClass="table table-striped table-bordered" >   
+        CssClass="table table-bordered table-dark" >   
         <Columns>
         <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" />        
         <asp:BoundField DataField="Product.ProductName" HeaderText="Nazwa" />        
@@ -42,5 +43,5 @@
         <!--Checkout Placeholder -->
       </td>
     </tr>
-    </table>
+    </table></div></div>
 </asp:Content>

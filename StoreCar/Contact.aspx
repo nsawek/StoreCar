@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="StoreCar.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h3>Kontakt</h3>
     <address>
         One Microsoft Way<br />
@@ -12,5 +14,5 @@
     <address>
         <strong>Wsparcie:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
         <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    </address></div></div>
 </asp:Content>
