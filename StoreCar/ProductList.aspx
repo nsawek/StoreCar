@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Samochody" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
+﻿<%@ Page Title="Produkty" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
          CodeBehind="ProductList.aspx.cs" Inherits="StoreCar.ProductList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
@@ -28,7 +28,7 @@
                 </GroupTemplate>
                 <ItemTemplate>
                     <div class="col-sm-6 col-md-4">  
-                    <div class="card" style="width: 25rem;">
+                    <div class="card">
                     <div runat="server">  
                                   <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
                                   <img class="card-img-top" alt="Responsive image" src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"/></a>

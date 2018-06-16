@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using StoreCar.Models;
+using System.Data.Entity;
 
 namespace StoreCar.Account
 {

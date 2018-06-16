@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using StoreCar.Models;
+using StoreCar.Logic;
 
 namespace StoreCar
 {
