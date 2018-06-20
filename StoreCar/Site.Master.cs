@@ -23,8 +23,7 @@ namespace StoreCar
         {
             // Poniższy kod zapewnia ochronę przed atakami XSRF
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
-            Guid requestCookieGuidValue;
-            if (requestCookie != null && Guid.TryParse(requestCookie.Value, out requestCookieGuidValue))
+            if (requestCookie != null && Guid.TryParse(requestCookie.Value, out Guid requestCookieGuidValue))
             {
                 // Użyj tokenu Anti-XSRF z pliku cookie
                 _antiXsrfTokenValue = requestCookie.Value;

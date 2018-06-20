@@ -14,8 +14,7 @@ namespace StoreCar
         protected void Page_Load(object sender, EventArgs e)
         {
             string rawId = Request.QueryString["ProductID"];
-            int productId;
-            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out productId))
+            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out int productId))
             {
                 using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
                 {

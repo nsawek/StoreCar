@@ -11,7 +11,7 @@
         <asp:BoundField DataField="Product.UnitPrice" HeaderText="Cena (SZT)" DataFormatString="{0:c}"/>     
         <asp:TemplateField   HeaderText="Ilość">            
                 <ItemTemplate>
-                    <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox> 
+                    <asp:TextBox ID="QTY" Width="40" runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox> 
                 </ItemTemplate>        
         </asp:TemplateField>    
         <asp:TemplateField HeaderText="Cena łączna">            
@@ -21,7 +21,7 @@
         </asp:TemplateField> 
         <asp:TemplateField HeaderText="Usuń element">            
                 <ItemTemplate>
-                    <asp:CheckBox id="Remove" runat="server"></asp:CheckBox>
+                    <asp:CheckBox id="Usun" runat="server"></asp:CheckBox>
                 </ItemTemplate>        
         </asp:TemplateField>    
         </Columns>    
