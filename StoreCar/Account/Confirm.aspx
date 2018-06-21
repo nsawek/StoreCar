@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Potwierdzenie konta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Confirm.aspx.cs" Inherits="StoreCar.Account.Confirm" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
 
     <div>
@@ -15,4 +17,6 @@
             </p>
         </asp:PlaceHolder>
     </div>
+      </div>
+         </div>
 </asp:Content>

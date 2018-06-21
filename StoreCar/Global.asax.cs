@@ -22,6 +22,9 @@ namespace StoreCar
 
             //Kod uruchamiany podczas łączenia z bazą danych
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+            RA rA = new RA();
+            rA.AddUserAndRole();
         }
     }
 }

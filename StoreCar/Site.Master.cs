@@ -89,6 +89,14 @@ namespace StoreCar
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.User.IsInRole("Ed"))
+            {
+                adminLink.Visible = true;
+            }
+        }
     }
 
 }

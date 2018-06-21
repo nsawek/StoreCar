@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Rejestrowanie zewnętrznej nazwy logowania" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegisterExternalLogin.aspx.cs" Inherits="StoreCar.Account.RegisterExternalLogin" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
 <h3>Zarejestruj za pomocą konta <%: ProviderName %></h3>
 
     <asp:PlaceHolder runat="server">
@@ -30,4 +32,5 @@
             </div>
         </div>
     </asp:PlaceHolder>
+      </div></div>
 </asp:Content>

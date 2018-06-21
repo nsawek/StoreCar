@@ -27,7 +27,7 @@
                     </tr>
                 </GroupTemplate>
                 <ItemTemplate>
-                    <div class="col-sm-6 col-md-4">  
+                    <div>  
                     <div class="card">
                     <div runat="server">  
                                   <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">

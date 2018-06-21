@@ -44,6 +44,7 @@
                     <a class="navbar-brand" runat="server" href="~/"><span class="fas fa-car"></span> Store Car</a>
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li><a  class="nav-link" runat="server" href="~/About">Informacje</a></li>
+                        <li><a  class="nav-link" runat="server" id="adminLink" visible="false" href="~/AM/AP">PA</a></li>
                         <li><a  class="nav-link" runat="server" href="~/Contact">Kontakt</a></li>
                         <li><a  class="nav-link" runat="server" href="~/ProductList">Produkty</a></li>
                         <li><a  class="nav-link" runat="server" href="~/ShoppingCart" ID="cartCount"></a></li>
@@ -59,7 +60,7 @@
                             <ul class="navbar-nav my-2 my-lg-0">
                                 <li><a class="nav-link" runat="server" href="~/Account/Manage" title="Manage your account">Cześć, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <asp:LoginStatus runat="server" class="nav-link" LogoutAction="Redirect" LogoutText="Wyloguj" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
                             </ul>
                         </LoggedInTemplate>

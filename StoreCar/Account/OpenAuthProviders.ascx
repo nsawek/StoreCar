@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="OpenAuthProviders.ascx.cs" Inherits="StoreCar.Account.OpenAuthProviders" %>
 
 <div id="socialLoginList">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h4>Zaloguj się za pomocą innej usługi.</h4>
     <hr />
     <asp:ListView runat="server" ID="providerDetails" ItemType="System.String"
@@ -19,4 +21,6 @@
             </div>
         </EmptyDataTemplate>
     </asp:ListView>
+      </div>
+         </div>
 </div>

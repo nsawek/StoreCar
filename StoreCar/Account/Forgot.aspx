@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Zapomniane hasło" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forgot.aspx.cs" Inherits="StoreCar.Account.ForgotPassword" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
 
     <div class="row">
@@ -36,4 +38,6 @@
             </asp:PlaceHolder>
         </div>
     </div>
+      </div>
+         </div>
 </asp:Content>

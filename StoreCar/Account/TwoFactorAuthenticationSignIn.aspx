@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Uwierzytelnianie dwuetapowe" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TwoFactorAuthenticationSignIn.aspx.cs" Inherits="StoreCar.Account.TwoFactorAuthenticationSignIn" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
         <h2><%: Title %>.</h2>
     <asp:PlaceHolder runat="server" ID="sendcode">
         <section>
@@ -47,4 +49,6 @@
             </div>
         </section>
     </asp:PlaceHolder>
+      </div>
+         </div>
 </asp:Content>

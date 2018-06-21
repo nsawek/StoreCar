@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Weryfikowanie numeru telefonu" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VerifyPhoneNumber.aspx.cs" Inherits="StoreCar.Account.VerifyPhoneNumber" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
  <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -24,5 +26,5 @@
                     Text="Prześlij" CssClass="btn btn-default" />
             </div>
         </div>
-    </div>
+    </div></div></div>
 </asp:Content>

@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Numer telefonu" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddPhoneNumber.aspx.cs" Inherits="StoreCar.Account.AddPhoneNumber" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
 
     <div class="form-horizontal">
@@ -25,4 +27,6 @@
             </div>
         </div>
     </div>
+      </div>
+        </div>
 </asp:Content>

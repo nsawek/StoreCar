@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="Zmieniono hasło" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ResetPasswordConfirmation.aspx.cs" Inherits="StoreCar.Account.ResetPasswordConfirmation" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
     <div>
         <p>Zmieniono hasło. Kliknij <asp:HyperLink ID="login" runat="server" NavigateUrl="~/Account/Login">tutaj</asp:HyperLink> w celu zalogowania się </p>
-    </div>
+    </div></div></div>
 </asp:Content>

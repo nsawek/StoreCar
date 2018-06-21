@@ -2,6 +2,8 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2>Zarządzaj logowaniami zewnętrznymi.</h2>
     <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
             <p class="text-success"><%: SuccessMessage %></p>
@@ -39,4 +41,5 @@
     <div>
         <uc:OpenAuthProviders runat="server" ReturnUrl="~/Account/ManageLogins" />
     </div>
+      </div></div>
 </asp:Content>

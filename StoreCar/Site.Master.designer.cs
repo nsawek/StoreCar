@@ -13,6 +13,15 @@ namespace StoreCar {
     public partial class SiteMaster {
         
         /// <summary>
+        /// Kontrolka adminLink.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor adminLink;
+        
+        /// <summary>
         /// Kontrolka cartCount.
         /// </summary>
         /// <remarks>

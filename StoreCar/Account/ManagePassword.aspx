@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Zarządzanie hasłem" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="StoreCar.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="jumbotron jumbotron-fluid">
+  <div class="container">
     <h2><%: Title %>.</h2>
     <div class="form-horizontal">
         <section id="passwordForm">
@@ -90,4 +92,6 @@
             </asp:PlaceHolder>
         </section>
     </div>
+      </div>
+         </div>
 </asp:Content>
