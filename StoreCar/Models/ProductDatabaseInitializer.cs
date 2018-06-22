@@ -55,7 +55,7 @@ namespace StoreCar.Models
                 {
                     ProductID = 1,
                     ProductName = "Audi A2",
-                    Description = "W sam raz na miasto.",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..",
                     ImagePath="a2.jpg",
                     UnitPrice = 8600,
                      CategoryID = 1
@@ -66,7 +66,7 @@ namespace StoreCar.Models
                 {
                     ProductID = 3,
                     ProductName = "Ford Focus",
-                    Description = "W sam raz na miasto",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     ImagePath="f2.jpg",
                     UnitPrice = 78500 ,
                     CategoryID = 2
@@ -76,7 +76,7 @@ namespace StoreCar.Models
                 {
                     ProductID = 6,
                     ProductName = "BMW-X3",
-                    Description = "W sam raz na miasto",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     ImagePath="bmw1.jpg",
                     UnitPrice = 65000,
                     CategoryID = 3
@@ -85,7 +85,7 @@ namespace StoreCar.Models
                 {
                     ProductID = 8,
                     ProductName = "VW Passat B6",
-                    Description = "W sam raz na miasto",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     ImagePath="vw1.jpg",
                     UnitPrice = 45000,
                     CategoryID = 4
@@ -94,7 +94,7 @@ namespace StoreCar.Models
                 {
                     ProductID = 55,
                     ProductName = "Skoda Octavia",
-                    Description = "W sam raz na miasto",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     ImagePath="s1.jpg",
                     UnitPrice = 62000,
                     CategoryID = 5
